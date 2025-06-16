@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #dec12b;       /* Golden Yellow */
+  --dark-color: #121211;    
+   /* --dark-color: #3D7193;      Text / Navbar / Footer */
+  --light-color: #fdfcfc;         /* Background */
+  --accent-color: #5a5e5e;        /* Secondary text / icons */
+  --muted-bg-color: #b4b6ab;      /* Section background / light grey */
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --border-radius: 8px;
+  --transition: all 0.3s ease-in-out;
+}
+
+/* Utility Classes */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-secondary {
+  background-color: var(--accent-color);
+}
+.bg-dark {
+  background-color: var(--dark-color);
+}
+.bg-light {
+  background-color: var(--light-color);
+}
+.bg-accent{
+  background-color: var(--accent-color);
+}
+.bg-gray{
+  background-color: var(--muted-bg-color);
+}
+
+
+.text-primary {
+  color: var(--primary-color);
+}
+.text-accent {
+  color: var(--accent-color);
+} 
+.text-light {
+  color: var(--light-color);
+}
+.text-dark {
+  color: var(--dark-color);
+}
+.hover\:text-primary:hover {
+  color: var(--primary-color);
+}
+
+body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-family: var(--font-main);
+}
+
+.navbar {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.section.dark {
+  background-color: var(--muted-bg-color);
+}
+
+p {
+  color: var(--accent-color);
+}
